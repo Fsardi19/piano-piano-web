@@ -94,6 +94,13 @@ section{position:relative}
 /* intro band */
 .intro{text-align:center}
 .intro .lead{margin:0 auto}
+.intro .eyebrow{font-family:var(--serif);font-style:italic;font-size:20px;letter-spacing:.02em;text-transform:none;color:var(--ambra);margin-bottom:18px}
+
+/* trust band */
+.trustband{background:var(--cipresso);color:var(--avorio);padding:16px 0}
+.trustrow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(245,239,225,.82)}
+.trustrow .dot{color:var(--oro)}
+@media(max-width:640px){.trustrow{font-size:11px;gap:8px}.trustrow .dot{display:none}}
 
 /* two-col */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center}
@@ -230,10 +237,24 @@ footer .legal{padding-top:30px;font-size:12px;color:rgba(245,239,225,.5);display
   <div class="scrollcue">Scroll</div>
 </header>
 
-<!-- INTRO -->
+<!-- TRUST BAND -->
+<div class="trustband">
+  <div class="wrap trustrow">
+    <span>Envío gratis a toda Colombia</span>
+    <span class="dot">·</span>
+    <span>Botella numerada · edición limitada</span>
+    <span class="dot">·</span>
+    <span>Si llega rota, te la reponemos</span>
+    <span class="dot">·</span>
+    <span>Registro INVIMA 2026005030</span>
+  </div>
+</div>
+
+<!-- INTRO / MARCA -->
 <section class="pad intro">
   <div class="wrap">
-    <p class="lead reveal">Hicimos una sola tanda. Un olivar toscano, una cosecha temprana, <span class="oro">1.800 botellas</span>. Aceite de oliva de verdad: fresco, vivo, con fecha de cosecha como el buen vino.</p>
+    <div class="eyebrow reveal" style="text-align:center">Il piacere va preso con calma</div>
+    <p class="lead reveal">En Piano Piano creemos que la mesa es un ritual: un <span class="oro">momento para detenerse</span>, compartir y disfrutar sin prisa. Nuestro aceite nace de ese mismo ritmo.</p>
   </div>
 </section>
 
@@ -406,7 +427,7 @@ footer .legal{padding-top:30px;font-size:12px;color:rgba(245,239,225,.5);display
       </div>
     </div>
     <div class="legal">
-      <span>© 2026 Piano Piano · Importado por Radikal Food Club S.A.S.</span>
+      <span>© 2026 Piano Piano · Importado por Radikal Food Club S.A.S. · NIT 901797107-8 · Reg. INVIMA 2026005030</span>
       <span>Aceite de oliva de categoría superior obtenido directamente de aceitunas y únicamente mediante procesos mecánicos.</span>
     </div>
   </div>
