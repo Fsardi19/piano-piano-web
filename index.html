@@ -150,6 +150,22 @@ section{position:relative}
 .card .unit{font-family:var(--sans);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);margin:10px 0 16px}
 .card p{font-size:15.5px;line-height:1.55;color:rgba(38,38,28,.72)}
 
+/* ficha técnica */
+.spec{margin-top:52px;overflow-x:auto}
+.spec table{width:100%;border-collapse:collapse;font-size:15px;min-width:460px}
+.spec th{text-align:left;font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);padding:0 0 14px;border-bottom:1px solid rgba(154,110,30,.32)}
+.spec td{padding:14px 0;border-bottom:1px solid rgba(154,110,30,.14)}
+.spec td.param{color:var(--inchiostro)}
+.spec td.val{font-family:var(--serif);font-size:19px;color:var(--ambra);white-space:nowrap;padding-right:20px}
+.spec td.lim{color:rgba(38,38,28,.5);white-space:nowrap;text-align:right;font-size:14px}
+.spec .foot{margin-top:22px;font-size:12.5px;color:rgba(38,38,28,.55);line-height:1.6;max-width:760px}
+.panelbox{margin-top:34px;background:var(--avorio);border:1px solid rgba(154,110,30,.22);border-radius:3px;padding:28px 32px}
+.panelbox h4{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);margin-bottom:18px}
+.panelbox .pgrid{display:flex;flex-wrap:wrap;gap:30px}
+.panelbox .pi{display:flex;flex-direction:column}
+.panelbox .pi b{font-family:var(--serif);font-size:30px;color:var(--ambra);font-weight:400;line-height:1}
+.panelbox .pi span{font-size:11px;letter-spacing:.08em;color:var(--oliva);text-transform:uppercase;margin-top:8px}
+
 /* cata bar */
 .cata{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
 .taste{border:1px solid rgba(154,110,30,.35);border-radius:100px;padding:9px 20px;font-size:14px;letter-spacing:.04em;color:var(--ambra)}
@@ -291,12 +307,12 @@ footer .legal{padding-top:30px;font-size:12px;color:rgba(245,239,225,.5);display
     </div>
     <div class="reveal d1">
       <div class="eyebrow">Il metodo</div>
-      <h2>Cosecha temprana, molienda en frío.</h2>
-      <p class="muted">Ni calor ni prisa, porque el calor y la prisa se llevan lo mejor. Las aceitunas pasan de la rama al molino en horas, no en días. Por eso el aceite queda verde, aromático y lleno de vida.</p>
+      <h2>Cosecha temprana, extracción en frío.</h2>
+      <p class="muted">Un aceite se define en las primeras horas. Recolección en cosecha temprana, con la aceituna aún verde, y extracción mecánica en frío por debajo de 27 °C. Sin calor y sin espera, la fruta llega íntegra: acidez mínima, más polifenoles y todo el aroma intacto.</p>
       <div class="steps">
-        <div class="step"><div class="n">01</div><div><h4>Raccolta temprana</h4><p>Aceituna verde, recogida a tiempo. Más carácter, más polifenoles.</p></div></div>
-        <div class="step"><div class="n">02</div><div><h4>Molienda en frío</h4><p>Extracción mecánica, sin calor. Se preserva el aroma y el amargo noble.</p></div></div>
-        <div class="step"><div class="n">03</div><div><h4>Embotellado con fecha</h4><p>Cosecha 2025/2026, lote L1/26. Un aceite que te dice cuándo nació.</p></div></div>
+        <div class="step"><div class="n">01</div><div><h4>Raccolta temprana</h4><p>Aceituna verde recolectada a tiempo. Mayor carga de polifenoles y un perfil más intenso.</p></div></div>
+        <div class="step"><div class="n">02</div><div><h4>Extracción en frío (≤ 27 °C)</h4><p>Molienda mecánica sin aporte de calor. Preserva los compuestos fenólicos y volátiles.</p></div></div>
+        <div class="step"><div class="n">03</div><div><h4>Trazabilidad de lote</h4><p>Cosecha 2025/2026, lote L1/26, consumo preferente 09/2027. Cada botella, rastreable.</p></div></div>
       </div>
     </div>
   </div>
@@ -309,7 +325,7 @@ footer .legal{padding-top:30px;font-size:12px;color:rgba(245,239,225,.5);display
     <div class="reveal d1">
       <div class="eyebrow">La botella</div>
       <h2 style="font-size:clamp(34px,4.5vw,56px);margin-bottom:22px">Vidrio oscuro que protege lo de adentro.</h2>
-      <p class="muted">500 ml de aceite de oliva extra virgen 100% italiano. Etiqueta pintada en acuarela con el paisaje toscano de donde viene. El vidrio oscuro no es estética: guarda el aceite de la luz para que llegue tan vivo como salió del molino.</p>
+      <p class="muted">500 ml de aceite de oliva extra virgen 100% italiano, cosecha 2025/2026. El vidrio oscuro no es estética: bloquea la luz UV, el principal enemigo de un aceite fresco. Con 0,27% de acidez libre y 383 mg/kg de polifenoles, es un aceite para consumir joven, no para guardar.</p>
       <div class="cata">
         <span class="taste">Frutado verde</span>
         <span class="taste">Amargo elegante</span>
@@ -342,6 +358,41 @@ footer .legal{padding-top:30px;font-size:12px;color:rgba(245,239,225,.5);display
         <div class="unit">Cosecha</div>
         <p>Tiene fecha de cosecha, como el vino. Si un aceite no te dice cuándo nació, es porque prefiere que no preguntes.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FICHA TÉCNICA -->
+<section class="pad" style="background:var(--panna)">
+  <div class="wrap">
+    <div class="eyebrow reveal">Ficha técnica · análisis de laboratorio</div>
+    <h2 class="reveal" style="font-size:clamp(32px,4.2vw,52px);max-width:780px;margin-bottom:18px">Los números, sin adornos.</h2>
+    <p class="muted reveal" style="max-width:640px">Cada lote se analiza en laboratorio acreditado y ante un panel de cata profesional. Estos son los resultados de la cosecha 2025/2026, lote L1/26.</p>
+    <div class="spec reveal d1">
+      <table>
+        <thead><tr><th>Parámetro</th><th>Resultado</th><th style="text-align:right">Límite extra virgen*</th></tr></thead>
+        <tbody>
+          <tr><td class="param">Acidez libre (ácido oleico)</td><td class="val">0,27%</td><td class="lim">≤ 0,80%</td></tr>
+          <tr><td class="param">Índice de peróxidos</td><td class="val">5,5 meq O₂/kg</td><td class="lim">≤ 20,0</td></tr>
+          <tr><td class="param">K₂₇₀ (absorbancia UV)</td><td class="val">0,15</td><td class="lim">≤ 0,22</td></tr>
+          <tr><td class="param">K₂₃₂ (absorbancia UV)</td><td class="val">1,90</td><td class="lim">≤ 2,50</td></tr>
+          <tr><td class="param">ΔK</td><td class="val">0,00</td><td class="lim">≤ 0,01</td></tr>
+          <tr><td class="param">Polifenoles totales</td><td class="val">383 mg/kg</td><td class="lim">—</td></tr>
+          <tr><td class="param">Tocoferol α (vitamina E)</td><td class="val">193 mg/kg</td><td class="lim">—</td></tr>
+          <tr><td class="param">Ácido oleico (C18:1)</td><td class="val">75,3%</td><td class="lim">55–85%</td></tr>
+        </tbody>
+      </table>
+      <div class="panelbox">
+        <h4>Análisis sensorial · panel de cata (método COI)</h4>
+        <div class="pgrid">
+          <div class="pi"><b>0,0</b><span>Mediana de defectos</span></div>
+          <div class="pi"><b>4,1</b><span>Frutado (verde)</span></div>
+          <div class="pi"><b>4,0</b><span>Amargo</span></div>
+          <div class="pi"><b>4,3</b><span>Picante</span></div>
+          <div class="pi"><b>Extra virgen</b><span>Clasificación</span></div>
+        </div>
+      </div>
+      <p class="foot">*Límites según Reglamento (UE) 2022/2104. Análisis químico: Unione Italiana Vini Laboratori, acreditado ACCREDIA (informe 26FI02806). Panel de cata: ANTEO, método Reg. CE 1833/2015. Perfil sensorial: frutado verde de aceituna y hoja, con notas de almendra fresca, alcachofa y hierba cortada; amargo y picante persistentes, en equilibrio.</p>
     </div>
   </div>
 </section>
